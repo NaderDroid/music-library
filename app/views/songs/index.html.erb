@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>S name</th>
+      <th>Song name</th>
       <th>Artist</th>
       <th>Location</th>
       <th>Genre</th>
@@ -19,7 +19,7 @@
       <tr>
         <td><%= song.s_name %></td>
         <td><%= song.artist %></td>
-        <td><%= song.location %></td>
+        <td><a href="<%= song.link %>">Play song</a></td>
         <td><%= song.genre %></td>
         <td><%= song.explicit %></td>
         <td><%= link_to 'Show', song %></td>

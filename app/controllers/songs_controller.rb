@@ -21,6 +21,10 @@ class SongsController < ApplicationController
   def edit
   end
 
+  #redirect all other requests to 404 page
+  def error404
+  end
+
   # POST /songs
   # POST /songs.json
   def create
