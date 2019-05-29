@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30f57351-0fa8-4ca3-83c7-7ac208936454" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/songs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/songs_controller.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="GeneratorOptions">
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
@@ -96,6 +95,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,8 +218,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,14 +382,15 @@
       <workItem from="1559127371005" duration="1958000" />
       <workItem from="1559137491943" duration="5514000" />
       <workItem from="1559151898644" duration="1202000" />
+      <workItem from="1559156276193" duration="238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9275000" />
+    <option name="totallyTimeSpent" value="9513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03473344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -404,9 +404,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.22465754" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.7780822" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" visible="true" weight="0.5753425" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.690411" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -459,7 +459,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mustation@Rails_console__mustation.rcov" NAME="Rails console: mustation Coverage Results" MODIFIED="1559137551739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mustation" />
-    <SUITE FILE_PATH="coverage/mustation@Development__mustation.rcov" NAME="Development: mustation Coverage Results" MODIFIED="1559151917199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mustation" />
+    <SUITE FILE_PATH="coverage/mustation@Development__mustation.rcov" NAME="Development: mustation Coverage Results" MODIFIED="1559156295854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mustation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/database.yml">
