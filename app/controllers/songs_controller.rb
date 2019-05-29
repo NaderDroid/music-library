@@ -20,10 +20,9 @@ class SongsController < ApplicationController
   # GET /songs/1/edit
   def edit
   end
-
-  #redirect all other requests to 404 page
-  def error404
-  end
+  # #redirect all other requests to 404 page
+  # def error404
+  # end
 
   # POST /songs
   # POST /songs.json
@@ -47,10 +46,8 @@ class SongsController < ApplicationController
     respond_to do |format|
       if @song.update(song_params)
         format.html { redirect_to @song, notice: 'Song was successfully updated.' }
-        format.json { render :show, status: :ok, location: @song }
       else
         format.html { render :edit }
-        format.json { render json: @song.errors, status: :unprocessable_entity }
       end
     end
   end
