@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Mustation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,20 +15,6 @@
   </head>
 
   <body>
-  <% if signed_in? %>
-    Signed in as: <%= current_user.email %>
-    <%= button_to 'Sign out', sign_out_path, method: :delete %>
-  <% else %>
-    <%= link_to 'Sign in', sign_in_path %>
-  <% end %>
-
-  <div id="flash">
-    <% flash.each do |key, value| %>
-      <div class="flash <%= key %>"><%= value %></div>
-    <% end %>
-  </div>
-
-
   <%= yield %>
   </body>
 </html>

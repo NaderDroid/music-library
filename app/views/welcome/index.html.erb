@@ -1,0 +1,68 @@
+<div class=" bgimg w3-display-container w3-text-white">
+  <div class="logo w3-display-middle">
+    <h1 class="w3-jumbo">Mustation</h1>
+    <p class="w3-large w3-center">Meticulously Curated Library</p>
+  </div>
+
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('login').style.display='block'" class="w3-button
+    w3-black">Sign in</button></p>
+    <p><button onclick="document.getElementById('browse').style.display='block'" class="w3-button
+    w3-black">Browse</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button
+    w3-black">Contact</button></p>
+  </div>
+</div>
+
+<!-- Browse Modal -->
+<div id="browse" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('browse').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Search songs</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Sorry, requested song currently unavailable</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div id="login" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright
+      w3-large">x</span>
+      <h1>LOGIN HERE</h1>
+    </div>
+    <div class="w3-container w3-dark-gray">
+      <p>Enter your email and password to login</p>
+      <form accept-charset="UTF-8" action="songs" target="_blank" method="post">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Enter Email" required
+                  name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Enter Password" required
+                  name="Message"></p>
+        <p><button class="w3-button w3-light-gray" type="submit">PROCEED</button></p>
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container w3-dark-gray">
+      <p>If you are facing any technical difficulties or just want to say, Hi.</p>
+      <form action="testing" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Comments" required name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
