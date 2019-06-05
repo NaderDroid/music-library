@@ -5,7 +5,7 @@
   </div>
 
   <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button onclick="document.getElementById('login').style.display='block'" class="w3-button
+    <p><button onclick="location.assign('songs')" class="w3-button
     w3-black">Sign in</button></p>
     <p><button onclick="document.getElementById('browse').style.display='block'" class="w3-button
     w3-black">Browse</button></p>
@@ -23,28 +23,6 @@
     </div>
     <div class="w3-container">
       <h5>Sorry, requested song currently unavailable</h5>
-    </div>
-  </div>
-</div>
-
-<!-- Login Modal -->
-<div id="login" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
-      <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright
-      w3-large">x</span>
-      <h1>LOGIN HERE</h1>
-    </div>
-    <div class="w3-container w3-dark-gray">
-      <p>Enter your email and password to login</p>
-      <form accept-charset="UTF-8" action="songs" target="_blank" method="post">
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Enter Email" required
-                  name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Enter Password" required
-                  name="Message"></p>
-        <p><button class="w3-button w3-light-gray" type="submit">PROCEED</button></p>
-        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-      </form>
     </div>
   </div>
 </div>

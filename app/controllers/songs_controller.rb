@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
   before_action :set_song, only: [:show, :edit, :update, :destroy]
+  before_action :require_login
 
   # GET /songs
   # GET /songs.json
@@ -32,10 +33,8 @@ class SongsController < ApplicationController
     respond_to do |format|
       if @song.save
         format.html { redirect_to @song, notice: 'Song was successfully created.' }
-        format.json { render :show, status: :created, location: @song }
       else
         format.html { render :new }
-        format.json { render json: @song.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -58,7 +57,6 @@ class SongsController < ApplicationController
     @song.destroy
     respond_to do |format|
       format.html { redirect_to songs_url, notice: 'Song was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 
