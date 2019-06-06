@@ -1,14 +1,23 @@
-<div class="w3-center w3-blue-gray">
+<div class="w3-container w3-center">
   <h2><%= t(".title") %></h2>
 
   <%= form_for @user do |form| %>
-    <%= render partial: '/users/form', object: form %>
 
-    <div class="submit-field">
-      <%= form.submit %>
+    <div>
+      <%= form.label :email %>
+      <%= form.text_field :email, type: 'email' %>
     </div>
 
-    <div class="other-links">
+    <div>
+      <%= form.label :password %>
+      <%= form.password_field :password %>
+    </div>
+
+    <div class="w3-yellow">
+      <%= form.submit 'Register' %>
+    </div>
+
+    <div>
       <%= link_to t(".sign_in"), sign_in_path %>
     </div>
   <% end %>

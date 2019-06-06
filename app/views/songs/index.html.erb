@@ -1,14 +1,10 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Songs</h1>
 
 <h3 class="w3-display-bottommiddle w3-yellow">
 
-  <div id="header">
+  <div>
     <% if signed_in? -%>
       <%= button_to t(".sign_out"), sign_out_path, method: :delete %>
-    <% else -%>
-      <%= link_to t(".sign_in"), sign_in_path %>
     <% end -%>
   </div>
 </h3>
