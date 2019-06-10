@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mustation</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="welcome.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Mustation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-  <div>
-    <% if signed_in? %>
-      <%= button_to t(".sign_out"), sign_out_path, method: :delete %>
-    <% end %>
-  </div>
+<body>
+<nav class="w3-bar  w3-black w3-large">
+  <a class="w3-bar-item w3-button w3-mobile" href="welcome">Home</a>
+  <a class="w3-bar-item w3-button w3-mobile" href="#">Contact</a>
+  <a class="w3-bar-item w3-button w3-mobile" href="sign_in">Log in</a>
+  <a class="w3-bar-item w3-button w3-mobile" href="sign_up">Sign up</a>
+</nav>
 
-  <%= yield %>
-  </body>
+<%= yield %>
+</body>
 </html>
