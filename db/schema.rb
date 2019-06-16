@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_29_141813) do
+ActiveRecord::Schema.define(version: 2019_06_16_141323) do
 
   create_table "songs", force: :cascade do |t|
     t.string "s_name"
     t.string "artist"
-    t.string "link"
+    t.boolean "link", null: false
     t.string "genre"
     t.boolean "explicit"
     t.datetime "created_at", null: false

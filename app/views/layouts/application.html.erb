@@ -15,6 +15,20 @@
 </head>
 
 <body>
+
+<% if signed_in? %>
+  Signed in as: <%= current_user.email %>
+  <%= button_to 'Sign out', sign_out_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign in', sign_in_path %>
+<% end %>
+
+<div id="flash">
+  <% flash.each do |key, value| %>
+    <div class="flash <%= key %>"><%= value %></div>
+  <% end %>
+</div>
+
 <nav class="w3-bar  w3-black w3-large">
   <a class="w3-bar-item w3-button w3-mobile" href="welcome">Home</a>
   <a class="w3-bar-item w3-button w3-mobile" href="#">Contact</a>
