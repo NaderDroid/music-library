@@ -1,5 +1,11 @@
 class UpdateColumnLink < ActiveRecord::Migration[5.2]
   def change
-    change_column :songs, :link, :boolean, null: false
+  end
+  def up
+    change_column :songs, :link, :string
+  end
+
+  def down
+    change_column :songs, :link, :string, null: false
   end
 end
